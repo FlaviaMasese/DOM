@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+</head>
+<style>
+    table, th, td {
+      border:1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+<body>
+   <div>
+    <h1 id="Head">cassy shop</h1>
+   </div> 
+   <div>
+    <table style="width: 70%">
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Links</th>
+          <th>Images</th>
+        </tr>
+        <tr>
+            <td>Cup</td>
+            <td>Custom made white cups</td>
+            <td>15 euros</td>
+            <td><a href="https://www.amazon.de/Windhorse-Regenbogen-gestreift-kaffee-Untertasse/dp/B01LXFZCKZ/ref=pd_lpo_3?pd_rd_i=B01LXFZCKZ&psc=1" class="Liink">cups</a></td>
+            <td><img src="http://acupunctureatelier.com/wp-content/uploads/Cup_IntrotoCupping-1024x1024.jpg" style="max-width:2.5cm"></td>
+        </tr>
+        <tr>
+            <td>Plates</td>
+            <td>Assorted plates</td>
+            <td>20 euros</td>
+            <td><a href="https://www.amazon.de/AmazonBasics-Geschirrservice-18-teilig-f%C3%BCr-Personen/dp/B019EEUQ2O/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2A2LKP7PC01EJ&keywords=plates&qid=1665405423&qu=eyJxc2MiOiI3LjI1IiwicXNhIjoiNi4zNiIsInFzcCI6IjQuOTkifQ%3D%3D&s=kitchen&sprefix=plates%2Ckitchen%2C132&sr=1-4" style="display:block;"class="Liink" >plates</a></td>
+            <td><img src="http://1.bp.blogspot.com/-xfkrSInkwcc/UjcoBTHR7AI/AAAAAAAAGTA/5BtVXSsEB0g/s1600/903402_95919816.jpg" style="max-width:2.5cm"></td>
+        </tr>
+        <tr>    
+            <td>Carpet</td>
+            <td>Fluffy and high quality</td>
+            <td>100 euros</td>
+            <td><a href="https://www.amazon.de/HomebyHome-Hochflor-Wohnzimmer-Einfarbig-Rechteck/dp/B0918RRQPQ/ref=sr_1_2_sspa?crid=8DPEAXVQO5XE&keywords=fluffy+carpet&qid=1665405730&qu=eyJxc2MiOiI2LjU1IiwicXNhIjoiNS43MSIsInFzcCI6IjMuNjQifQ%3D%3D&s=kitchen&sprefix=fluffy%2Ckitchen%2C106&sr=1-2-spons&psc=1"class="Liink" >carpet</a></td>
+            <td><img src="http://westernsydneyflooring.com.au/static/uploads/images/istock-133378-medium-wfusciqnjvxe.jpg?height=1100&mode=max&upscale=false&width=2000" style="max-width:2.5cm"></td>
+        </tr>
+        <tr>    
+            <td>Table</td>
+            <td>Round hard coffee table</td>
+            <td>150 euros</td>
+            <td><a href="https://www.amazon.de/FineBuy-Esszimmertisch-100x100x77-K%C3%BCchentisch-Speisetisch/dp/B0B8SCFJKJ/ref=sr_1_1_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1MON8BW54Y4G8&keywords=tables&qid=1665406229&qu=eyJxc2MiOiI0Ljk0IiwicXNhIjoiMi45MyIsInFzcCI6IjEuMDAifQ%3D%3D&s=kitchen&sprefix=tables%2Ckitchen%2C105&sr=1-1-spons&psc=1" class="Liink">Table</a></td>
+            <td><img src="https://wallsdesk.com/wp-content/uploads/2016/04/Glass-Top-Pedestal-Coffee-Table.jpg" style="max-width:2.5cm"></td> 
+        </tr>
+        <tr>    
+            <td>Blanket</td>
+            <td>warm cuddly cashmere blanket</td>
+            <td>33 euros</td>
+            <td><a href="https://www.amazon.de/G%C3%B6zze-Wohn-Kuscheldecke-Cashmere-Feeling-40024-37-1317/dp/B00A7TK5TK/ref=sr_1_1_sspa?crid=AJX9AXX06QW7&keywords=blankets%2C%2Bthrows%2B%26%2Bpatchwork%2Bquilts&qid=1665406093&qu=eyJxc2MiOiI3Ljg2IiwicXNhIjoiNi41NyIsInFzcCI6IjQuODMifQ%3D%3D&s=kitchen&sprefix=blankets%2Ckitchen%2C97&sr=1-1-spons&th=1" class="Liink">Blanket</a></td>
+            <td><img src="https://images-na.ssl-images-amazon.com/images/I/71sqPKviolL._AC_SL1500_.jpg" style="max-width:2.5cm"></td>
+        </tr>
+    </table>
+    <div>
+       <textarea id="w3review" name="w3review" rows="4" cols="50">
+       </textarea>
+    </div>
+    <div>
+        <footer>
+            <p>© 2009 — Cassy Shop,Helenstraeet, 6, Bonn.</p>
+        </footer>
+    </div>
+    </div>
+    <script>
+        const h1 = document.querySelector("h1")
+        h1.innerText = "Shopping Cassy"
+
+        const changColor = document.body.style.background = "red"
+
+        const changeFooter= document.querySelector("footer").innerHTML = "Address: 00200, Mombasa";
+
+        
+        const arrOfImagesLinks =["http://acupunctureatelier.com/wp-content/uploads/Cup_IntrotoCupping-1024x1024.jpg",
+            "http://1.bp.blogspot.com/-xfkrSInkwcc/UjcoBTHR7AI/AAAAAAAAGTA/5BtVXSsEB0g/s1600/903402_95919816.jpg",
+            "http://westernsydneyflooring.com.au/static/uploads/images/istock-133378-medium-wfusciqnjvxe.jpg?height=1100&mode=max&upscale=false&width=2000",
+            "https://wallsdesk.com/wp-content/uploads/2016/04/Glass-Top-Pedestal-Coffee-Table.jpg",
+            "https://images-na.ssl-images-amazon.com/images/I/71sqPKviolL._AC_SL1500_.jpg"
+            ]
+        for (let i = 0; i < arrOfImagesLinks.length; i++) 
+             document.createElement("img")
+            img.src = arrOfImagesLinks[i]
+            img.style="max-width:2.5cm" 
+            img.style.visibility=hidden
+
+        let prices ="15 euros, 20 euroe, 100 euros, 150 euros, 33 euros "
+            words = prices.split(" ")
+        for (let i = 0; i < price.length; i++) {
+            document.write('<span style="color: ' + colors[(i % colors.length)] + ';">' + words[i] + '</span>');
+            }
+         
+    </script>
+</body>
+</html>
