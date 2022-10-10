@@ -86,9 +86,9 @@
             let element = odcument.querySelector('img');
             element.classList.toggle("mystyle")
         }
-        const colorPrice = function(){
-            const Price= document.querySelector(".price")
-            price.style= "color: red"
+        const myPricelist = document.querySelectorAll(".price");
+        for (let i = 0; i < myPricelist.length; i++) {
+            myPricelist[i].style.color = "blue";
         }
          
     </script>
